@@ -640,11 +640,9 @@
         <div class="form-card">
           <h3>Book Your Free Audit</h3>
           <p class="form-note">We'll get back to you within 24 hours to confirm your slot.</p>
-          <form name="domo-audit" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you">
-            <input type="hidden" name="form-name" value="domo-audit" />
-            <p style="display:none">
-              <label>Don't fill this out: <input name="bot-field" /></label>
-            </p>
+          <form action="https://formspree.io/f/mpqykgnl" method="POST">
+            <input type="hidden" name="_subject" value="New Domo Audit Request — RelmIQ" />
+            <input type="hidden" name="_next" value="https://relmiq.com/thank-you" />
             <div class="form-group">
               <label for="name">Full Name</label>
               <input type="text" id="name" name="name" placeholder="Rex Johnson" required />
