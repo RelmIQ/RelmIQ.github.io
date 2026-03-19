@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You're booked in — RelmIQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #F4F7FF;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 60px 48px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(13,27,42,0.10);
+    }
+    .icon { font-size: 64px; margin-bottom: 24px; }
+    h1 { font-size: 32px; font-weight: 800; color: #0D1B2A; margin-bottom: 14px; letter-spacing: -0.5px; }
+    p { font-size: 16px; color: #8A97B0; line-height: 1.7; margin-bottom: 10px; }
+    .highlight { color: #0D1B2A; font-weight: 600; }
+    .divider { height: 1px; background: #DDE3F0; margin: 32px 0; }
+    .what-next { text-align: left; }
+    .what-next h2 { font-size: 16px; font-weight: 700; color: #0D1B2A; margin-bottom: 16px; }
+    .step { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+    .step-num {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: #1A6BFF; color: #fff;
+      font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 2px;
+    }
+    .step p { font-size: 14px; color: #0D1B2A; font-weight: 500; margin: 0; }
+    .step span { font-size: 13px; color: #8A97B0; font-weight: 400; }
+    .back-btn {
+      display: inline-block;
+      margin-top: 32px;
+      background: #0D1B2A;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .back-btn:hover { background: #1A6BFF; }
+    .logo { font-size: 20px; font-weight: 800; color: #0D1B2A; margin-bottom: 32px; }
+    .logo span { color: #1A6BFF; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">Relm<span>IQ</span></div>
+    <div class="icon">✅</div>
+    <h1>You're booked in!</h1>
+    <p>Thanks for requesting your <span class="highlight">Free Domo Audit</span>. We'll be in touch within <span class="highlight">24 hours</span> to confirm your slot.</p>
+    <p>Check your inbox — and your spam folder just in case.</p>
+
+    <div class="divider"></div>
+
+    <div class="what-next">
+      <h2>What happens next</h2>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <p>We confirm your 30-minute slot</p>
+          <span>Expect an email from us within 24 hours with a calendar link</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <p>We review your Domo environment</p>
+          <span>No prep needed — just show up and we'll walk through it together</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <p>You receive your written action plan</p>
+          <span>Within 48 hours of the call, you'll have a clear list of prioritised fixes</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="/" class="back-btn">← Back to RelmIQ</a>
+  </div>
+</body>
+</html>
